@@ -1,0 +1,23 @@
+.food-container-parent{
+    display: flex;
+    max-width: 1000px;
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+}
+
+.cart-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin: 20px;
+    width: 20%;
+}

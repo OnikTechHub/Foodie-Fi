@@ -1,23 +1,64 @@
-.food-container-parent{
+.food-container-parent {
     display: flex;
-    max-width: 1000px;
-    margin: 100px auto;
-    max-width: 1200px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
 }
 
 .food-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
-    width: 80%;
 }
 
 .cart-container {
-    background-color: #f9f9f9;
-    padding: 20px;
+    width: 10%; 
+    background: #fdfdfd;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin: 20px;
-    width: 20%;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    align-self: flex-start; 
+    position: sticky;
+    top: 100px;
+}
+
+.cart-title {
+    font-size: 24px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* ট্যাবলেট ডিভাইসের জন্য (যেমন iPad) */
+@media screen and (max-width: 1024px) {
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr); /* ট্যাবলেটে ২টি কার্ড দেখাবে */
+    }
+    .cart-container {
+        width: 250px; /* কার্ট একটু ছোট হবে */
+    }
+}
+
+/* মোবাইল ডিভাইসের জন্য */
+@media screen and (max-width: 768px) {
+    .food-container-parent {
+        flex-direction: column-reverse; /* মোবাইলে কার্ট উপরে এবং খাবার নিচে আসবে (অথবা উল্টোটা চাইলে column দিন) */
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(1, 1fr); /* মোবাইলে ১টি করে কার্ড দেখাবে */
+        width: 100%;
+    }
+
+    .cart-container {
+        width: 100%; /* মোবাইলে কার্ট পুরো স্ক্রিন জুড়ে থাকবে */
+        position: static; /* মোবাইলে স্টিকি পজিশন সরিয়ে ফেলা ভালো যাতে স্ক্রল করতে সুবিধা হয় */
+        margin-bottom: 30px;
+    }
+
+    .cart-title {
+        text-align: center;
+    }
 }

@@ -10,6 +10,8 @@ const SingleFood = ({ food, addToCard }) => {
             <button onClick={() => addToCard(food)} className='add-to-cart-btn'>
                 Add To Cart
             </button>
+            
+
         </div>
     );
 };

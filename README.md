@@ -47,9 +47,9 @@ This project is fully responsive and works perfectly on:
 
 **Name:** Onik Das
 
-**Email:** [your-email@example.com](onikdas.dev@gmail.com)
+**Email:** [onikdas.dev@gmail.com](onikdas.dev@gmail.com)
 
-**GitHub:** [https://github.com/your-username](https://github.com/OnikTechHub)
+**GitHub:** [https://github.com/your-OnikTechHub](https://github.com/OnikTechHub)
 
 ---
 
